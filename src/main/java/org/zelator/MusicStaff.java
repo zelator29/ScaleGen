@@ -5,15 +5,8 @@ import java.awt.*;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-public class MusicStaff extends JPanel implements PropertyChangeListener
+public class MusicStaff extends StaffPanel
 {
-	@Override
-	public void addNotify()
-	{
-		super.addNotify();
-		this.setBackground(Color.PINK);
-	}
-
 	public void paint(Graphics g)
 	{
 		super.paint(g);
@@ -27,10 +20,9 @@ public class MusicStaff extends JPanel implements PropertyChangeListener
 		g2.drawString("\uD834\uDD1E", 40, 80);// Gclef
 	}
 
-
 	@Override
-	public void propertyChange(PropertyChangeEvent evt)
+	protected Color getBackgroundColor()
 	{
-
+		return Color.CYAN;
 	}
 }
