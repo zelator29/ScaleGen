@@ -7,24 +7,26 @@ import java.beans.PropertyChangeListener;
 
 public class ScaleSheet extends JPanel implements PropertyChangeListener
 {
-	@Override
-	public void addNotify()
-	{
-		super.addNotify();
-		this.setBackground(Color.BLACK);
-	}
+	protected MusicStaff musicStaff = new MusicStaff();
+	protected TabStaff tabStaff = new TabStaff();
 
 	public ScaleSheet()
 	{
 		super.setLayout(new GridLayout(2, 1));
-
-		super.add(new MusicStaff());
-		super.add(new TabStaff());
+		super.add(musicStaff);
+		super.add(tabStaff);
 	}
 
 	@Override
 	public void propertyChange(PropertyChangeEvent evt)
 	{
+		// TODO propagate model changes to children
+	}
+
+	@Override
+	public void paint(Graphics g)
+	{
+		super.paint(g);
 
 	}
 }

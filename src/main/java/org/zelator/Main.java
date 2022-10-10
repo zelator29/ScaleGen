@@ -8,7 +8,7 @@ public class Main
 	public static void main(String[] args)
 	{
 		JFrame frame = new JFrame("ScaleGen");
-		frame.setSize(800, 500);
+		frame.setSize(800, 600);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

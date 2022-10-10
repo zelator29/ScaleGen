@@ -1,9 +1,10 @@
 package org.zelator;
 
-import javax.swing.*;
-import java.awt.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 
 public class TabStaff extends StaffPanel
 {
@@ -15,14 +16,14 @@ public class TabStaff extends StaffPanel
 
 		Font font = new Font("Rockwell Extra Bold", Font.PLAIN, 20);
 		g2.setFont(font);
-		g2.drawString("T", 60, 50);
-		g2.drawString("A", 60, 70);
-		g2.drawString("B", 60, 90);
+		g2.drawString("T", 40, 60);
+		g2.drawString("A", 40, 80);
+		g2.drawString("B", 40, 100);
 	}
 
 	@Override
 	protected Color getBackgroundColor()
 	{
-		return Color.GRAY.brighter();
+		return HTMLColors.ALICE_BLUE;
 	}
 }
