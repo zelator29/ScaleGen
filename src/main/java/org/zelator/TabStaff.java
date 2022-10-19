@@ -14,11 +14,11 @@ public class TabStaff extends StaffPanel
 		g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
 				RenderingHints.VALUE_ANTIALIAS_ON);
 
-		Font font = new Font("Rockwell Extra Bold", Font.PLAIN, 20);
+		Font font = new Font("Rockwell Extra Bold", Font.PLAIN, 30);
 		g2.setFont(font);
-		g2.drawString("T", 40, 60);
+		g2.drawString("T", 40, 50);
 		g2.drawString("A", 40, 80);
-		g2.drawString("B", 40, 100);
+		g2.drawString("B", 40, 110);
 	}
 
 	@Override

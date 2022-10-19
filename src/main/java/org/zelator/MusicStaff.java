@@ -14,19 +14,7 @@ public class MusicStaff extends StaffPanel
 		super.paint(g);
 		Graphics2D g2 = (Graphics2D) g;
 
-		// Draw the body of the staff
-		Rectangle staffBounds = g2.getClipBounds();
-		staffBounds.grow(-25, -25);
-		g2.drawRect(staffBounds.x, staffBounds.y, staffBounds.width, staffBounds.height);
 
-		staffBounds.translate(0, -1);
-		int factor = Math.round((int) Math.floor(staffBounds.getHeight()/ 6.0d));
-		int increment = factor;
-		for (int j=0; j < 5; j++) {
-			g2.drawLine(staffBounds.x, staffBounds.y + increment,
-					staffBounds.x + staffBounds.width, staffBounds.y + increment);
-			increment += factor;
-		}
 
 		g2.setFont(ADJ_FONT);
 		g2.setColor(Color.BLACK);

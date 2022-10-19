@@ -13,8 +13,8 @@ public class Main
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		frame.setLayout(new GridLayout(2, 1));
-		frame.add(new ScaleSheet());
-		frame.add(new ScaleSheet());
+		frame.add(new MusicStaff());
+		frame.add(new GuitarStaff());
 		frame.setVisible(true);
 	}
 }
